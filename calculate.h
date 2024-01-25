@@ -1,3 +1,3 @@
 #include <iostream>
-int binaryToDecimal(int x);
-int decimalToBinary(int x);
+int binaryToDecimal(long long x);
+long long decimalToBinary(int x);
