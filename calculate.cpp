@@ -1,6 +1,4 @@
 #include "calculate.h"
-#include <iostream>
-#include <cmath>
 
 int binaryToDecimal(long long x) {
     int dec = 0, i = 0, rem;
@@ -28,7 +26,6 @@ long long decimalToBinary(int x) {
         i *= 10;                          
         
     }
-
     return bin;
           
 }
