@@ -3,7 +3,7 @@
 class DecimalInput{
     public:
         std::string Input;
-        int arr[4], decimalNum, checkNum;
+        int arr[4], decimalNum;
         void helpToCalcFunc(int i){
             std::cout << Input;
             std::cin >> decimalNum;

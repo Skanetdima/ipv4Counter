@@ -9,12 +9,28 @@ class Result{
             std::cin >> x;
             arr[i] = binaryToDecimal(x);
         }
+        void helpToPrintFunc(int i){
+            printf("%i.", arr[i]);
+        }
 };
 
 void decCount(){
-    Result AndResult;
-    AndResult.input = "Input your help result in binary";
+    Result AndResult, NotResult;
+    AndResult.input = "Input your help result in binary from action of and: ";
+    NotResult.input = "Input your help result in binary from action of not: ";
     for(int i = 0; i < 4; i++){
         AndResult.helpToCalcFunc(i);
-    } 
+     
+    }
+    for(int i = 0; i < 4; i++){
+        NotResult.helpToCalcFunc(i);
+    }
+    for(int i = 0; i < 4; i++){
+        AndResult.helpToPrintFunc(i);
+    }
+    std::cout << std::endl;
+
+    for(int i = 0; i < 4; i++){
+        NotResult.helpToPrintFunc(i);
+    }
 }
