@@ -29,11 +29,13 @@ void binCount(){
     for(int i = 0; i < 4; i++)
         maskV4.helpToCalcFunc(i);
     
+    std::cout << "Your ipV4:   ";
     for(int i = 0; i < 4; i++)
         ipV4.helpToPrintFunc(i);
    
     std::cout << std::endl;
 
+    std::cout << "Your maskV4: ";
     for(int i = 0; i < 4; i++)
         maskV4.helpToPrintFunc(i);
 

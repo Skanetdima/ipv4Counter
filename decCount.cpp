@@ -10,9 +10,13 @@ class Result{
             arr[i] = binaryToDecimal(x);
         }
         void helpToPrintFunc(int i){
-            printf("%i.", arr[i]);
+            if(i == 3)
+                printf("%i", arr[i]);
+            else
+                printf("%i.", arr[i]);
         }
-};
+
+}; //Class that transforms binary to digits;
 
 void decCount(){
     Result AndResult, NotResult;
@@ -20,7 +24,6 @@ void decCount(){
     NotResult.input = "Input your help result in binary from action of not: ";
     for(int i = 0; i < 4; i++){
         AndResult.helpToCalcFunc(i);
-     
     }
     for(int i = 0; i < 4; i++){
         NotResult.helpToCalcFunc(i);
@@ -33,4 +36,5 @@ void decCount(){
     for(int i = 0; i < 4; i++){
         NotResult.helpToPrintFunc(i);
     }
+        
 }
